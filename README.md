@@ -7,7 +7,7 @@ It is optimized for integration in analog IP development, mixed-signal SoCs, and
 
 ---
 
-## 🧩 Overview
+## Overview
 
 **Architecture:**  
 - Differential NMOS input pair with PMOS active mirror load  
@@ -20,17 +20,11 @@ This is a clean, simulation-ready reference design suitable for **Cadence Virtuo
 
 ---
 
-## 📁 File Contents
 
-| File | Description |
-|------|--------------|
-| `cmos_opamp_180nm.sp` | Base transistor-level SPICE netlist (two-stage CMOS op-amp) |
-| `models/` | Folder for technology model cards (to be linked from your 180 nm PDK) |
-| `README.md` | Documentation for design usage and integration |
 
 ---
 
-## ⚙️ Node and Port Summary
+## Node and Port Summary
 
 | Node | Description |
 |------|--------------|
@@ -43,7 +37,7 @@ This is a clean, simulation-ready reference design suitable for **Cadence Virtuo
 
 ---
 
-## 🧠 Design Specs (Typical 180 nm)
+## Design Specs (Typical 180 nm)
 
 | Parameter | Target Value | Notes |
 |------------|---------------|-------|
@@ -55,42 +49,9 @@ This is a clean, simulation-ready reference design suitable for **Cadence Virtuo
 | Output Swing | 0.2 – 1.6 V | Typical single-ended output |
 | Tail Current | 10 – 15 µA | Set via `VBIAS` |
 
----
+ `VBIAS` ≈ 0.7–0.9 V for ~10 µA tail current.
 
-## 🧪 Usage Notes
 
-1. **Link the PDK models:**  
-   Replace the placeholder `.model` statements with your 180 nm foundry NMOS/PMOS model files.
-
-2. **Bias setup:**  
-   - Connect a bias network or DC source to `VBIAS` to set the tail current (`M7`).  
-   - Typical `VBIAS` ≈ 0.7–0.9 V for ~10 µA tail current.
-
-3. **Simulation in ADE:**  
-   - Import `cmos_opamp_180nm.sp` into a schematic symbol or testbench.  
-   - Define `VDD`, `VSS`, `VINP`, `VINN`, `VOUT`, and `VBIAS` pins.  
-   - Configure `.dc`, `.ac`, `.tran` analyses in ADE (no embedded `.op`/`.ac` in the netlist).  
-
-4. **Compensation:**  
-   The compensation capacitor (`Ccomp`) is defaulted to **2 pF**; adjust based on load and target bandwidth.
-
----
-
-## 🧱 Future Extensions
-
-- **Cascode Op-Amp** (higher gain, better PSRR)  
-- **Folded-Cascode Architecture** (wider input range, better CMRR)  
-- **Class-AB Output Stage** (for larger capacitive loads)  
-- **On-Chip Bias Generator** for self-contained biasing
-
----
-
-## 📜 License
-
-This design is released under the **MIT License**, allowing reuse and modification for research and educational purposes.  
-For commercial IP adaptation, please contact **Vellex Computing**.
-
----
 
 ## 🧑‍🔬 Author
 
