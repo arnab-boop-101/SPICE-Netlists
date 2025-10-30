@@ -55,6 +55,6 @@ This is a clean, simulation-ready reference design suitable for **Cadence Virtuo
 
 ## 🧑‍🔬 Author
 
-**Analog Design Team – Vellex Computing**  
+**Analog Design Engineer - lead/staff**  
 Lead: **Arnab Saha**  
 Focus: Analog Accelerators, FPAAA-based Adaptive Hardware, and AI Compute IPs  
