@@ -8,8 +8,8 @@ These are a clean, simulation-ready reference design suitable for **Cadence Virt
 
 
 
-## 🧑‍🔬 Author
+## Author
 
-**Analog Design Engineer - lead/staff**  
+**Analog Design Engineer - Lead/Staff**  
 Lead: **Arnab Saha**  
-Focus: Analog Accelerators, FPAAA-based Adaptive Hardware, and AI Compute IPs  
+Focus: Analog Accelerators, FPAAA-based Adaptive Hardware, High-speed IO, Sensor AFE, ADC/DAC, memory controllers & DRAM, LPDDR/PCIe,Ethernet/DDR/GPIO/USB2.0 and AI Compute IPs  
